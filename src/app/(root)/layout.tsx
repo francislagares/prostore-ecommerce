@@ -1,3 +1,5 @@
+import Header from '@/lib/shared/header';
+
 const RootLayout = ({
   children,
 }: Readonly<{
@@ -5,6 +7,7 @@ const RootLayout = ({
 }>) => {
   return (
     <div className='flex h-screen flex-col'>
+      <Header />
       <main className='wrapper flex-1'>{children}</main>
     </div>
   );
