@@ -1,3 +1,5 @@
+import Footer from '@/components/footer';
+
 import Header from '@/lib/shared/header';
 
 const RootLayout = ({
@@ -9,6 +11,7 @@ const RootLayout = ({
     <div className='flex h-screen flex-col'>
       <Header />
       <main className='wrapper flex-1'>{children}</main>
+      <Footer />
     </div>
   );
 };
