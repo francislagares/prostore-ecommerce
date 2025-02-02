@@ -1,6 +1,6 @@
 import Footer from '@/components/footer';
 
-import Header from '@/lib/shared/header';
+import Header from '@/components/shared/header';
 
 const RootLayout = ({
   children,
