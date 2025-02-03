@@ -3,9 +3,15 @@ import Link from 'next/link';
 
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 
+import { Product } from '@/types';
+
 import ProductPrice from './product-price';
 
-const ProductCard = ({ product }: any) => {
+type ProductCardProps = {
+  product: Product;
+};
+
+const ProductCard = ({ product }: ProductCardProps) => {
   return (
     <Card className='w-full max-w-sm'>
       <CardHeader className='items-center p-0'>
